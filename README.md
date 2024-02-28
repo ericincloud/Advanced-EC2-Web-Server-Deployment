@@ -28,12 +28,13 @@
 ![IMAGE]()
 
 ## Step 5: Setup Application Load Balancer (ALB) 
-#### Setup an Application Load Balancer (ALB) in a public subnet & connect it to the EC2 instance using target groups.
+#### Create a target group containing the WordPress EC2 isntance. Then setup an Application Load Balancer (ALB) in public subnets & connect it to the EC2 instance using target groups. Edit the ALB's security group to allow `HTTP` on `Port 80` from anywhere `0.0.0.0/0`.
 
-![IMAGE]()
+![IMAGE]() 
+![IMAGE]() 
 
 ## Step 6: Create Bastion instance 
-#### Create a Bastion EC2 instance in the public subnet to SSH to the WordPress EC2 in the private subnet.
+#### Create a Bastion EC2 instance in a public subnet to SSH to the WordPress EC2 in the private subnet.
 
 ![IMAGE]()
 
