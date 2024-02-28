@@ -39,13 +39,13 @@
 
 #### Accept the popup > login as `ec2-user` -- You should now be successfully connected to the bastion instance! 
 
-#### To SSH into the private WordPress instance, take note of the private IP address of the private WordPress isntance then use command: `ssh username@Private IP DNS name`. Congratulations! You should now be able to have access to the Bitnami WordPress private EC2 instance through the bastion!
+#### To SSH into the private WordPress instance, take note of the private IP address of the private WordPress isntance then use command: `ssh bitnami@Private IP DNS name`. Congratulations! You should now be able to have access to the Bitnami WordPress private EC2 instance through the bastion!
 
 ![IMAGE]()
 ![IMAGE]()
 ![IMAGE]()
 
-## Tips
+## Notes
 ####
 
 ## Reference 
