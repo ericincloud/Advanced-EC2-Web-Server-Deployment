@@ -1,18 +1,19 @@
 # Advanced EC2 WordPress Server Deployment
-#### Description...
+#### Description... <br> .........
 
 ## Step 1: Create VPC
-#### First, create a VPC with 3 Public & 3 Private subnets.
+#### First, create a VPC with 3 Public & 3 Private subnets. If needed, allow internet access by creating an Internet Gateway (IG) and attach it to the VPC. 
+
+![IMAGE]()
+![IMAGE]()
+
+## Step 2: Setup & configure WordPress isntance
+#### Setup & configure WordPress EC2 instance and place it in a private subnet e.g `private1-us-east-1a`. Select the Bitnami WordPress AMI. Proceed after 2/2 status checks are passed. 
 
 ![IMAGE]()
 
-## Step 2: Create RDS MySQL database 
-#### Create a RDS MySQL database and place it in a private subnet.
-
-![IMAGE]()
-
-## Step 3: Setup & configure WordPress isntance
-#### Setup & configure WordPress EC2 instance in another private subnet.
+## Step 3: Create RDS MySQL database 
+#### Create a RDS MySQL database and place it in another private subnet e.g `private2-us-east-1b`
 
 ![IMAGE]()
 
