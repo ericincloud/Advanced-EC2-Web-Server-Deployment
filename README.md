@@ -28,13 +28,18 @@
 ![IMAGE]()
 
 ## Step 5: Setup Application Load Balancer (ALB) 
-#### Create a target group containing the WordPress EC2 isntance. Then setup an Application Load Balancer (ALB) in public subnets & connect it to the EC2 instance using target groups. Edit the ALB's security group to allow `HTTP` on `Port 80` from anywhere `0.0.0.0/0`.
+#### Create a target group containing the WordPress EC2 isntance. Then setup an Application Load Balancer (ALB) in public subnets & connect it to the EC2 instance using target groups. Edit the ALB's security group to allow `HTTP` on `Port 80` from anywhere `0.0.0.0/0`. If done correct, you should be able to access the ALB's DNS name and see a default WordPress webpage!
 
 ![IMAGE]() 
 ![IMAGE]() 
+![IMAGE]() 
 
-## Step 6: Create Bastion instance 
-#### Create a Bastion EC2 instance in a public subnet to SSH to the WordPress EC2 in the private subnet.
+## Step 6: Create Bastion instance & SSH/SSH forwarding
+#### Create a Bastion EC2 instance in a public subnet to SSH to the WordPress EC2 in the private subnet. Verify functionality by using SSH/SSH forwarding from the public bastion isntance then into the private WorrdPress EC2 instance. This can be done using PuTTY. Copy and Paste the bastion's public IP into the `hostname` within Putty > Head to `Auth` on the left tab > select `Credentials` > Browse for the bastion's private key and select it > On the left tab select `Auth` > Under `Other authentication related options` select `Allow agent forwarding` > Then connect by clicking `Open`. 
+
+#### Accept the popup > login as `ec2-user` -- You should now be successfully connected to the bastion instance! 
+
+#### To SSH into the private WordPress instance, take note of the private IP address of the private WordPress isntacne then use this command: ``
 
 ![IMAGE]()
 
