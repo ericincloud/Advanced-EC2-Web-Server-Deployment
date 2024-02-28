@@ -1,8 +1,8 @@
 # Advanced EC2 WordPress Server Deployment
 #### Description...
 
-## Step 1: Create VPC with 3 Public & 3 Private subnets
-#### 
+## Step 1: Create VPC
+#### First, create a VPC with 3 Public & 3 Private subnets.
 
 ![IMAGE]()
 
@@ -31,7 +31,8 @@
 
 ![IMAGE]()
 
-## Step 7: Verify functionality by accessing the DNS name of the ALB
-#### 
+## Step 7: Verify functionality 
+#### Verify functionality by accessing the DNS name of the ALB.
 
+#### Congratulations!
 ![IMAGE]()
