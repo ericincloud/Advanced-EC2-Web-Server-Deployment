@@ -7,18 +7,23 @@
 ![IMAGE]()
 ![IMAGE]()
 
-## Step 2: Setup & configure WordPress isntance
-#### Setup & configure WordPress EC2 instance and place it in a private subnet e.g `private1-us-east-1a`. Select the Bitnami WordPress AMI. Proceed after 2/2 status checks are passed. 
+## Step 2: Setup & configure WordPress instance
+#### Setup & configure WordPress EC2 instance, select the Bitnami WordPress AMI and place it in a private subnet e.g `private1-us-east-1a`. Proceed after 2/2 status checks are passed. 
 
 ![IMAGE]()
 
 ## Step 3: Create RDS MySQL database 
-#### Create a RDS MySQL database and place it in another private subnet e.g `private2-us-east-1b`
+#### To create a RDS MySQL database, first create an RDS subnet group containing the private subnets of the WordPress VPC. Then create the database itself with the WordPress VPC, newly created subnet group, and WordPress EC2 instance selected. 
 
+![IMAGE]()
+![IMAGE]()
+![IMAGE]()
+![IMAGE]()
+![IMAGE]()
 ![IMAGE]()
 
 ## Step 4: Connect EC2 to RDS 
-#### Connect the WordPress EC2 isntance to the RDS database using security groups.
+#### Connect the WordPress EC2 intance to the RDS database using security groups.
 
 ![IMAGE]()
 
