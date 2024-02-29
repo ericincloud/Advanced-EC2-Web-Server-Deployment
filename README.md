@@ -47,7 +47,9 @@
 #### Install the Pageant application. Add the private key to the Pageant key list. 
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/Pag.JPG)
 
-#### Create a Bastion EC2 instance in a public subnet to SSH to the WordPress EC2 in the private subnet. Verify functionality by using SSH/SSH forwarding from the public bastion instance then into the private WordPress EC2 instance. This can be done using PuTTY. Copy and Paste the bastion's public IP into the `hostname` within Putty > Head to `Auth` on the left tab > select `Credentials` > Browse for the bastion's private key and select it > On the left tab select `Auth` > Under `Other authentication related options` select `Allow agent forwarding` > Then connect by clicking `Open`. 
+#### Create a standard public EC2 instance in a public subnet. This will be the Bastion instance that will SSH to the WordPress EC2 located in the private subnet. 
+
+#### Verify functionality by using SSH/SSH forwarding from the public bastion instance then into the private WordPress EC2 instance. This can be done using PuTTY. Copy and Paste the bastion's public IP into the `hostname` within Putty > Head to `Auth` on the left tab > select `Credentials` > Browse for the bastion's private key and select it > On the left tab select `Auth` > Under `Other authentication related options` select `Allow agent forwarding` > Then connect by clicking `Open`. 
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/WPSSH1.JPG)
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/WPSSH2.JPG)
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/WPSSH3.JPG)
