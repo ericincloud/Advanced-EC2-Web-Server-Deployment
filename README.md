@@ -1,7 +1,6 @@
 # Advanced EC2 WordPress Server Deployment
-#### Description... <br> .........
-#### Architecture
-
+#### A private WordPress EC2 instance connected to a RDS database serves users through an ALB, while a public Bastion EC2 instance give developers secure access the private WP instance.
+#### Architectural Diagram:
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/AdvWP-Arch.JPG)
 
 ## Step 1: Create VPC
