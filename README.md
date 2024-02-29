@@ -1,6 +1,6 @@
 # Advanced EC2 WordPress Server Deployment
 #### A private WordPress EC2 instance connected to a RDS database serves users through an ALB, while a public Bastion EC2 instance give developers secure access the private WP instance.
-#### Architectural Diagram:
+## Architectural Diagram
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/AdvWP-Arch.JPG)
 
 ## Step 1: Create VPC
@@ -58,7 +58,15 @@
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/SSHBitnami.JPG)
 
 ## Notes
-####
+* Remember to log in to the Bitnami AMI instance as username `Bitnami`.
+* Remember to upload key to Pageant.
+* Remember to create an Inital Database name in RDS!
+* Use Private/Public IP or DNS IP to SSH.
 
 ## Reference 
-####
+* Connect/Login to RDS: <br> `mysql -h your-rds-endpoint -u your-username -p`
+
+* Show databases: <br> `show databases;`
+
+* SSH into Bitnami instance: <br> `ssh bitnami@Private IP Address`
+
