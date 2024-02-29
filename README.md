@@ -37,11 +37,13 @@
 ## Step 6: Create Bastion instance & SSH/SSH forwarding
 #### Create a Bastion EC2 instance in a public subnet to SSH to the WordPress EC2 in the private subnet. Verify functionality by using SSH/SSH forwarding from the public bastion isntance then into the private WorrdPress EC2 instance. This can be done using PuTTY. Copy and Paste the bastion's public IP into the `hostname` within Putty > Head to `Auth` on the left tab > select `Credentials` > Browse for the bastion's private key and select it > On the left tab select `Auth` > Under `Other authentication related options` select `Allow agent forwarding` > Then connect by clicking `Open`. 
 
+#### Then install the Pageant application if needed. Add the private key to the Pageant key list. 
+![IMAGE]()
+
 #### Accept the popup > login as `ec2-user` -- You should now be successfully connected to the bastion instance! 
+![IMAGE]()
 
 #### To SSH into the private WordPress instance, take note of the private IP address of the private WordPress isntance then use command: `ssh bitnami@Private IP DNS name`. Congratulations! You should now be able to have access to the Bitnami WordPress private EC2 instance through the bastion!
-
-![IMAGE]()
 ![IMAGE]()
 ![IMAGE]()
 
