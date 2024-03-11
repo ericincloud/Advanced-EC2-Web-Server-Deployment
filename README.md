@@ -1,4 +1,4 @@
-# Advanced EC2 WordPress Server Deployment
+# Advanced EC2 Web Server Deployment
 #### Advanced EC2 Web Server gives users a seamless experience while developers the security and flexibility they need to manage resources! 
 #### Users are served through an ALB connected to a private WordPress EC2 instance with an RDS database. While developers on the other hand can safely and securely access the private WP instance through a Bastion EC2 instance. 
 ## Architectural Diagram
