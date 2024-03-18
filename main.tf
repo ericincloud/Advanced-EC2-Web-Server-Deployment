@@ -43,7 +43,7 @@ resource "aws_db_instance" "default" {
   engine               = "mysql"
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
-  identifier           = "Advanced-EC2-Web-Server-Deployment"
+  identifier           = "advanced-ec2-web-server-deployment"
   username             = "admin"
   password             = "password"
   parameter_group_name = "default.mysql5.7"
