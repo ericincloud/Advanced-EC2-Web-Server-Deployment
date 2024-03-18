@@ -5,7 +5,7 @@
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/AdvWP-Arch.JPG)
 
 ## Step 1: Create VPC
-#### First, create a VPC with 3 Public & 3 Private subnets. If needed, allow internet access by creating an Internet Gateway (IG) and attach it to the VPC. 
+#### First, create a VPC with 3 Public & 3 Private subnets. Create an Internet Gateway (IG) and attach it to the VPC. 
 
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/CreateWPVPC.JPG)
 
