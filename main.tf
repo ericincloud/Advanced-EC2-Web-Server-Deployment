@@ -85,7 +85,7 @@ resource "aws_lb" "test" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.default.id]
-  subnets            = [aws_subnet.public[0].id, aws_subnet.public[1].id]
+  subnets            = [aws_subnet.public[0].id, aws_subnet.public[2].id]
 }
 
 resource "aws_instance" "public" {
