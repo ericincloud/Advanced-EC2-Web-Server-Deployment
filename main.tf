@@ -53,7 +53,7 @@ resource "aws_db_instance" "default" {
 
 resource "aws_db_subnet_group" "default" {
   name       = "main"
-  subnet_ids = [aws_subnet.private[0].id]
+  subnet_ids = aws_subnet.private[*].id
 
   tags = {
     Name = "My DB subnet group"
@@ -85,7 +85,7 @@ resource "aws_lb" "test" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.default.id]
-  subnets            = aws_subnet.public[*].id
+  subnets            = [aws_subnet.public[0].id, aws_subnet.public[1].id]
 }
 
 resource "aws_instance" "public" {
