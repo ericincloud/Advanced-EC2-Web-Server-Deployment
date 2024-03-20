@@ -14,7 +14,6 @@
 
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/LaunchEC2WP.JPG)
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/LauchEC2WP2.JPG) 
-![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/LaunchEC2WP3.JPG)
 
 ## Step 3: Create RDS MySQL database 
 #### To create a RDS MySQL database, first create an RDS subnet group containing the private subnets of the WordPress VPC. Then create the database itself with the WordPress VPC, newly created subnet group, and WordPress EC2 instance selected. 
