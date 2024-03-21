@@ -64,6 +64,8 @@
 * Remember to upload key to Pageant.
 * Remember to create an Inital Database name in RDS!
 * Use Private/Public IP or DNS IP to SSH.
+* Private Instance SG - Inbound: Port 80 & ALB's SG | Outbound: none
+* ALB SG: - Inbound: Port 80 from anywhere | Outbound: Port 80 to Private Instance's IPv4 or anywhere
 
 ## Reference 
 * Connect/Login to RDS: <br> `mysql -h your-rds-endpoint -u your-username -p`
