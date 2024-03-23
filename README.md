@@ -4,6 +4,8 @@
 ## Architectural Diagram
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/AdvWP-Arch.JPG)
 
+### NOTE: *Terraform file (main.tf) in repository.* 
+
 ## Step 1: Create VPC
 #### First, create a VPC with 3 Public & 3 Private subnets. Create an Internet Gateway (IG) and attach it to the VPC. 
 
