@@ -1,6 +1,6 @@
 # Advanced EC2 Web Server Deployment
-#### Advanced EC2 Web Server gives users a seamless experience while developers the security and flexibility they need to manage resources! 
-#### Users are served through an ALB connected to a private WordPress EC2 instance with an RDS database. While developers on the other hand can safely and securely access the private WP instance through a Bastion EC2 instance. 
+#### Advanced EC2 Web Server provides users with a seamless experience while offering developers the security and flexibility needed to manage resources. Users are served through an Application Load Balancer (ALB) connected to a private WordPress EC2 instance with an RDS database. Developers can securely access the private WordPress instance through a Bastion EC2 instance.
+
 ## Architectural Diagram
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/AdvWP-Arch.JPG)
 
@@ -54,7 +54,7 @@
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/WPSSH1.JPG)
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/WPSSH2.JPG)
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/WPSSH3.JPG)
-#### Accept the popup > login as `ec2-user` -- You should now be successfully connected to the bastion instance! 
+#### Accept the popup > login as `ec2-user` - You should now be successfully connected to the bastion instance! 
 ![IMAGE](https://github.com/ericincloud/Advanced-EC2-WordPress-Server-Deployment/blob/main/WPBastionSSH.JPG)
 
 #### To SSH into the private WordPress instance, take note of the private IP address of the private WordPress instance then use command: `ssh bitnami@Private IP Address`. 
